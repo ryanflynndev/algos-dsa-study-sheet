@@ -21,23 +21,24 @@ function bubbleSort(arr){
 
 console.log(bubbleSort([45, 32, 87, 43]))
 
-let selectionSort = (arr) => {
-    let len = arr.length;
-    for (let i = 0; i < len; i++) {
-        let min = i;
-        for (let j = i + 1; j < len; j++) {
-            if (arr[min] > arr[j]) {
-                min = j;
+//Selection sort is good if you want to minizmize the amount of swapping. O(n**2)
+function selectionSort(arr){
+    for(let i = 0; i < arr.length; i++){
+        let min = i
+        for(let j = i + 1; j < arr.length; j++){
+            if (arr[j] < arr[min]){
+                min = j
             }
         }
-        if (min !== i) {
-            let tmp = arr[i];
-            arr[i] = arr[min];
-            arr[min] = tmp;
+        if(i !== min){
+            let temp = arr[i]
+            arr[i] = arr[min]
+            arr[min] = temp 
         }
-    }
-    return arr;
+    } 
 }
+
+console.log(selectionSort([34,22,10,19,17]))
 
 let insertionSort = (inputArr) => {
     let length = inputArr.length;
