@@ -58,6 +58,8 @@ function insertionSort(arr){
 
 console.log(insertionSort([8,2,4,1,3]))
 
+//Elementary or Quadratic Sort Algos
+
 //Insertion Sort Best: O(n), Average: O(n**2), Worst: O(n**2), Space Complexity: O(1)
 
 //Bubble Sort Best: O(n), Average: O(n**2), Worst: O(n**2), Space Complexity: O(1)
