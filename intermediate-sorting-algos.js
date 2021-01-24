@@ -1,5 +1,3 @@
-//Merge Sort's First Part Which Merges Two Sorted Arrays
-
 function merge(arr1, arr2){
     let result = []
     let i = 0
