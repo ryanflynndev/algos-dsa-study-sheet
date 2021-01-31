@@ -63,6 +63,25 @@ function pivot(arr, start=0, end=arr.length){
     return swapIndex
 }
 
+function quicksortHoare(array, left, right) {
+    // left-pointer would be the index of the first element which is 0 and right-pointer would be the index of the last element which would be (length -1).
+    left = left || 0;
+    right = right || array.length - 1;
+
+    var pivot = partitionHoare(array, left, right);
+
+    if (left < pivot - 1) {
+        quicksortHoare(array, left, pivot - 1);
+    }
+
+    if (right > pivot) {
+        quicksortHoare(array, pivot, right)
+    }
+
+    return array;
+
+}
+
 //Pivot returns the index, but it also swap all of the less than items to the left side of the existing array
 
 
