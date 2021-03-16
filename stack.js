@@ -10,7 +10,7 @@ class MinStack {
 
     push(x){
         if(this.minStack.length === 0 || x <= last(this.minStack)){
-
+            this.minStack.push(x);
         }
         this.stack.push(x);
     }
