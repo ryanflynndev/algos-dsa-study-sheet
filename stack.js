@@ -21,4 +21,8 @@ class MinStack {
         }
         this.stack.pop();
     }
+
+    top(){
+        return last(this.stack);
+    }
 }
