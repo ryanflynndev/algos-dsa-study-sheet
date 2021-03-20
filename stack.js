@@ -14,4 +14,11 @@ class MinStack {
         }
         this.stack.push(x);
     }
+
+    pop(){
+        if(last(this.stack) === last(this.minStack)){
+            this.minStack.pop();
+        }
+        this.stack.pop();
+    }
 }
