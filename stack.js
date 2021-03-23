@@ -25,4 +25,8 @@ class MinStack {
     top(){
         return last(this.stack);
     }
+
+    min(){
+        return last(this.minStack);
+    }
 }
